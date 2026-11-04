@@ -1,0 +1,31 @@
+:root{color-scheme:light}.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:8px 12px;min-height:35px;border:1px solid var(--line);border-radius:24px;background:transparent;color:var(--ink);font-size:12px;white-space:nowrap}.theme-toggle:hover{background:#e8e5db}
+:root[data-theme='dark']{color-scheme:dark;--paper:#1c1f23;--ink:#f1f0e9;--muted:#abb1b5;--line:#3b4046;--olive:#b4cc83;color:var(--ink);background:var(--paper)}
+[data-theme='dark'] .sidebar{background:#181b1f}
+[data-theme='dark'] .theme-toggle:hover,[data-theme='dark'] .planning-table tbody tr:hover,[data-theme='dark'] .sequence-row:hover{background:#2b3035}
+[data-theme='dark'] .sync-state{background:#34383c;color:#e1e3de}
+[data-theme='dark'] .sync-state.stale{background:#57432b;color:#ffdfad}
+[data-theme='dark'] .refresh-button,[data-theme='dark'] .primary-button,[data-theme='dark'] .readerhead button{background:#e5cfac;color:#25272b}
+[data-theme='dark'] .refresh-button:hover,[data-theme='dark'] .primary-button:hover,[data-theme='dark'] .readerhead button:hover{background:#f0dfc5}
+[data-theme='dark'] .project-timeline>span+span{border-color:#52585e}
+[data-theme='dark'] .timeline-evidence{color:#b9bec0!important}
+[data-theme='dark'] .section-title p:not(.eyebrow),[data-theme='dark'] .area-number,[data-theme='dark'] .source-info,[data-theme='dark'] .mission-next,[data-theme='dark'] .checkpoint-note,[data-theme='dark'] .draft-details,[data-theme='dark'] .source-strip p,[data-theme='dark'] .section-description,[data-theme='dark'] .gate-grid article>p:not(.eyebrow){color:#b9bfc1}
+[data-theme='dark'] .planning-table tbody tr{border-color:var(--line)}
+[data-theme='dark'] .mini-meter,[data-theme='dark'] .system-progress-track{background:#3c4438}
+[data-theme='dark'] .status-pill.confirmed,[data-theme='dark'] .check-state.resolved{background:#374934;color:#e0efc6}
+[data-theme='dark'] .status-pill.partial,[data-theme='dark'] .check-state{background:#54412b;color:#f6dfbb}
+[data-theme='dark'] .status-pill.unconfirmed,[data-theme='dark'] .check-state.unverified,[data-theme='dark'] .check-state.deferred{background:#363a40;color:#d7dbde}
+[data-theme='dark'] .status-pill.needs-review{background:#5b3f32;color:#f8d5b7}
+[data-theme='dark'] .mission-panel{background:#30342f}
+[data-theme='dark'] .sequence-id{background:#3b4435;color:#e4edcf}
+[data-theme='dark'] .readiness-status{background:#493c2c;color:#f0dcc0}
+[data-theme='dark'] .stage-node{border-color:#b7ce92}
+[data-theme='dark'] .stage-path li:before{background:#58624f}
+[data-theme='dark'] .detail-section .eyebrow,[data-theme='dark'] .reader .eyebrow,[data-theme='dark'] .gate-grid b{color:#dfbc86}
+[data-theme='dark'] .milestones-section{background:#24282c}
+[data-theme='dark'] .milestone-trail svg{color:#b8ce94}
+[data-theme='dark'] .warning{background:#4d382b;color:#f6d6b8}
+[data-theme='dark'] .reader{border-color:#545b62}
+[data-theme='dark'] .reader::backdrop{background:#080b0ddb}
+[data-theme='dark'] .system-progress-track.unassessed{background:#4c5156}
+[data-theme='dark'] button:focus-visible,[data-theme='dark'] a:focus-visible,[data-theme='dark'] summary:focus-visible,[data-theme='dark'] [tabindex]:focus-visible{outline-color:#e5c494}
+@media(max-width:540px){.theme-toggle{width:35px;min-height:35px;padding:7px}.theme-toggle span{display:none}.topbar-title>span{display:none}.connection{gap:8px}}
