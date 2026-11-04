@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Project Progress Dashboard</title>
+  <script src="./theme-init.js"></script>
+  <link rel="stylesheet" href="./globals.css">
+  <link rel="stylesheet" href="./themes.css">
+  <link rel="stylesheet" href="./template.css">
+  <script type="module" src="./dashboard.mjs"></script>
+</head>
+<body>
+  <div class="dashboard-shell">
+    <aside class="sidebar" aria-label="Project navigation">
+      <a class="brand" href="#overview" id="brand">P / D</a>
+      <p class="brand-name" id="project-name">PROJECT PROGRESS</p>
+      <nav><a href="#overview">Overview</a><a href="#systems">Planning areas</a><a href="#milestones">Milestones</a><a href="#gates">Dependencies</a><a href="#evidence">Evidence</a></nav>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-title"><button type="button" class="mobile-menu icon-button" aria-expanded="false">Menu</button><span>PROJECT CONTROL</span></div>
+        <div class="connection"><button type="button" class="theme-toggle" role="switch" aria-label="Dark mode" aria-checked="false">Dark</button><button type="button" class="refresh-button">Refresh</button></div>
+      </header>
+      <p id="load-status" role="status">Reading project progress…</p>
+      <main id="dashboard"></main>
+    </div>
+  </div>
+  <dialog class="reader" aria-labelledby="detail-title">
+    <div class="readerhead"><h2 id="detail-title"></h2><form method="dialog"><button>Close</button></form></div>
+    <div id="detail-content"></div>
+  </dialog>
+</body>
+</html>
