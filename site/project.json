@@ -1,0 +1,63 @@
+{
+  "name": "Fictional Example Project",
+  "mark": "P / D",
+  "headline": "The road to launch.",
+  "isExample": true,
+  "startDate": null,
+  "timeZone": "UTC",
+  "milestone": {
+    "name": "First review",
+    "status": "Planning",
+    "criteria": "Review the agreed scope and confirm who owns the next step."
+  },
+  "focus": {
+    "title": "Confirm the scope",
+    "next": "List the required outcomes and record the scope decision."
+  },
+  "sequence": [
+    "scope",
+    "delivery"
+  ],
+  "areas": [
+    {
+      "id": "scope",
+      "name": "Scope and requirements",
+      "checks": [
+        {
+          "title": "Define the project goal",
+          "state": "resolved",
+          "evidence": "Example only: agree on the purpose."
+        },
+        {
+          "title": "Approve the boundaries",
+          "state": "open",
+          "evidence": "Record the approved scope in the project plan."
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "name": "Delivery planning",
+      "checks": [
+        {
+          "title": "Assign owners and milestones",
+          "state": "open",
+          "evidence": "Record the owner of each milestone."
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "Scope approval",
+      "detail": "Confirm scope before assigning delivery milestones."
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-01-12",
+      "name": "Sample kickoff",
+      "detail": "Fictional milestone recorded to demonstrate the history view."
+    }
+  ]
+}
